@@ -1,0 +1,11 @@
+Reaid CIFAR-10 database into dictionary
+The keys of the dictionary are
+
+batch_2 , batch_3 , batch_1 , batch_4 , batch_5
+
+Within each key is another dictionary that holds the following values for each data batch:
+
+data , labels , batch_label , filenames
+
+The data key holds a numpy.ndarray of 8 bit unsigned ints indicated RGB values of a 32x32 image
+Here is some sample data:
