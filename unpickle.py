@@ -17,7 +17,7 @@ if __name__ == "__main__":
 			data["batch_{}".format(str(file_count))] = do_unpickle(files[file_index])	
 
 	# instructions on how the script works
-	with open('./README', 'wb') as f:
+	with open('./README_UNPICKLE', 'wb') as f:
 		f.write('Reaid CIFAR-10 database into dictionary\n')
 		f.write('The keys of the dictionary are\n\n')
                 for item in data.keys():
