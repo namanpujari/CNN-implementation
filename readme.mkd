@@ -10,7 +10,7 @@ Convolutional Neural Networks work around this in the sense that is groups certa
 
 Hence by mathematical reasoning we see that the hidden layer, in size is less than the input layer. In the example above we have an input size of 10 x 10, a batch size of 3 and a stride length of 1 so the hidden layer is 8 x 8. And also each hidden layer neuron is only considering computations coming from 9 synapses. (3 x 3 batch size)
 
-*To be further discussed...*
+
 
 
 - Naman Pujari
