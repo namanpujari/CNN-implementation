@@ -33,26 +33,3 @@ def get_train_hyperparameters(flatten=False):
         return X_train.reshape((X_train.shape[0], 32, 32, 3)), Y_train 
     else: 
         return X_train, Y_train
-if __name__ == '__main__':
-    X_tr, Y_tr = get_train_hyperparameters(flatten = False);
-    print(X_tr.shape)
-    print(X_tr[0].shape)
-    print(Y_tr.shape)
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-      

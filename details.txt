@@ -1,0 +1,49 @@
+CIFARMODEL.X_tr indictes the RGB pixel data for each image in the 5000 image
+database. I have already unpacked these from their binary files provided from
+CIFAR. The shape of the CIFARMODEL.X_tr data is known to bee (5000, 32, 32, 3)
+and these values correspond to (image #, row, column, R/G/B respectively).
+
+Entering the following commands give the following outputs:
+
+CIFARMODEL.X_tr[0][0] (and of course we are assuming that this is the first
+image's first row of data. 
+---------------------
+
+[[178 178 178]
+ [178 179 179]
+ [179 180 180]
+ [180 180 180]
+ [180 180 180]
+ [180 180 179]
+ [179 179 178]
+ [178 177 177]
+ [177 176 175]
+ [174 172 170]
+ [168 165 180]
+ [179 180 180]
+ [180 181 181]
+ [181 181 181]
+ [181 182 182]
+ [182 182 182]
+ [181 181 181]
+ [180 180 180]
+ [180 179 179]
+ [178 177 176]
+ [175 173 171]
+ [168 177 177]
+ [178 178 178]
+ [178 179 179]
+ [179 179 180]
+ [179 180 179]
+ [180 179 179]
+ [180 178 178]
+ [178 178 177]
+ [177 176 176]
+ [175 175 173]
+ [171 169 167]]
+
+Hence we can see all 32 columns have been listed in the form a numpy ndarray
+of 2D array. Each subarray indicates RGB values of row #0, column #i, where
+'i' is the iteratable column variable. 
+
+
