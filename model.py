@@ -11,7 +11,8 @@ from PIL import Image
 class model(object):
     def __init__(self):
         # initialize the hyperparameters
-        self.X_tr, self.Y_tr = get_train_hyperparameters(flatten = False)
+        #self.X_tr, self.Y_tr = get_train_hyperparameters(flatten = False)
+        self.X_tr = get_train_hyperparameters(flatten = False).astype('uint8')
         self.labels = {0: 'airplane', 1: 'automobile', 2: 'bird', 3: 'cat', 4: 'deer', 5: 'dog', 6: 'frog', 7: 'horse', 8: 'ship', 9: 'truck'}
         # initialize more ihyperparameters like the stride length, batch size, etc. 
         
@@ -24,7 +25,7 @@ if __name__ == '__main__':
 
     image_ind = 300;
     img = Image.fromarray(CIFARMODEL.X_tr[image_ind])
-    numerical_label = CIFARMODEL.Y_tr[image_ind]
-    print(CIFARMODEL.labels[int(numerical_label)])
+    #numerical_label = CIFARMODEL.Y_tr[image_ind]
+    #print(CIFARMODEL.labels[int(numerical_label)])
     img.save('test.png')
 
