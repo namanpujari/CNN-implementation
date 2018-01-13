@@ -18,14 +18,9 @@ class model(object):
         
 if __name__ == '__main__':
     CIFARMODEL = model()
-    print('THE SHAPE OF THE X DATA FOR THE CONV NN IS')
-    print(CIFARMODEL.X_tr.shape)
-    print('PRINTING CIFARMODEL.X_tr[0][0][0] OF IMAGE')
-    print(CIFARMODEL.X_tr[0][0][0])
 
-    image_ind = 300;
+    image_ind = 120;
+    print('This should be a 32x32 image of a bird.')
     img = Image.fromarray(CIFARMODEL.X_tr[image_ind])
-    #numerical_label = CIFARMODEL.Y_tr[image_ind]
-    #print(CIFARMODEL.labels[int(numerical_label)])
     img.save('test.png')
 
